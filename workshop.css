@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    top: 0;
+    padding: 0;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+/* Navbar Section */
+.navbarsection{
+    display: flex;
+    justify-content:space-between;
+    padding: 5px;
+    color: #252525;
+    box-shadow: #F17816 0px 10px 30px;
+    position: sticky;
+    background-color: #ffffff;
+    opacity: 0.9;
+}
+.navbarsection ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 15px;
+}
+.navbarsection ul li a{
+    text-decoration: none;
+    align-items: center;
+    font-size: 20px;
+    justify-content: center;
+    color: #252525;
+    margin-top: 10px;
+}
+.navbarsection ul li a:hover{
+    color: #F17816;
+}
+.navbarsection h1 a{
+    cursor: pointer;
+    color: black;
+}
+
+/* Navbar Line Bars Section */
+#linebars{
+    padding-right: 15px;
+    display: none;
+}
+#linebars:hover{
+    cursor: pointer;
+}
+
+/* Side Navbar Section */
+.sidenavbarsection{
+    position: fixed;
+    top: 0%;
+    bottom: 0%;
+    background-color: black;
+    color: whitesmoke;
+    padding: 60px;
+    font-size: 30px;
+    opacity: 0.9;
+    font-weight: bolder;
+    animation: sidenavbarsection 2s ease-in-out;
+    display: none;
+}
+@keyframes sidenavbarsection{
+    0%{
+        transform: translateX(-100%);
+    }
+}
+.sidenavbarsection a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.sidenavbarsection ul li{
+    list-style: none;
+    padding-bottom: 10px;
+}
+.sidenavbarsection a:hover{
+    color: #F17816;
+}
+.sidenavbarsection i{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.sidenavbarsection i:hover{
+    cursor: pointer;
+    color: red;
+}
+
+/* Workshoptitle Section */
+.workshoptitle{
+    margin-top: 60px;
+    padding: 50px;
+    text-align: center;
+}
+
+/* Booking Form Section */
+.bookform{
+    margin-top: 190px;
+    margin-bottom: 40px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 30px;
+    border: 1px solid black;
+}
+.bookform input,select,date,time,button{
+    font-size: 30px;
+    padding: 5px;
+}
+.bookform p{
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.bookform img{
+    width: 500px;
+    height: 500px;
+}
+.bookform button{
+    cursor: pointer;
+}
+.bookform button:hover{
+    background-color: #F17816;
+    font-weight: bold;
+    box-shadow: 2px 2px 4px black;
+}
+
+/* AboutUs Section */
+.about{
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.about p{
+    width: 80%;
+}
+
+/* Copyright Section */
+.copyright{
+    padding: 10px;
+    text-align: center;
+    background-color: #f18329;
+}
+
+/* Media Query Section */
+@media screen and (max-width:1100px){
+    .bookform{
+        margin-left: 15%;
+        margin-right: 15%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 30px;
+        border: 1px solid black;
+    }
+    .bookform img{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:780px){
+    .bookform{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .about p{
+        width: 95%;
+    }
+    .bookform img{
+        border-radius: 50%;
+    }
+}
+
+@media screen and (max-width:590px){
+    .bookform{
+        margin-left: 3%;
+        margin-right: 3%;
+        padding: 20px;
+    }
+    .bookform img{
+        width: 350px;
+        height: 350px;
+    }
+    .about p{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:750px){
+    .navbarsection ul{
+        display: none;
+    }
+    #linebars{
+        display: inline;
+    }
+}

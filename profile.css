@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    top: 0;
+    margin: 0;
+}
+.profile{
+    padding: 10px;
+    margin-top: 6%;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: solid 1px;
+    margin-left: 40px;
+    margin-right: 40px;
+    box-shadow: 5px 5px 5px black;
+}
+.profile h1{
+    padding-top: 10px;
+}
+.update{
+    padding: 10px;
+    display: flex;
+    justify-content: end;
+    text-decoration: none;
+}
+#logoutuser{
+    color: red;
+}
+.profile a{
+    text-decoration: none;
+}
+.profile h2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.profile p{
+    padding-top: 10px;
+}
+.profile input{
+    font-size: 20px;
+    padding: 10px;
+}
+
+/* Media Query Section*/
+@media screen and (max-width:860px){
+    .profile{
+        flex-direction: column;
+        padding: 20px;
+        margin-left: 160px;
+        margin-right: 160px;
+    }
+}
+
+@media screen and (max-width:630px){
+    .profile{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .profile{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}

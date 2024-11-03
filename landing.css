@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    top: 0;
+    padding: 0;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+/* Navbar Section */
+.navbarsection{
+    display: flex;
+    justify-content:space-between;
+    padding: 5px;
+    color: #252525;
+    box-shadow: #F17816 0px 10px 30px;
+    position: sticky;
+    background-color: #ffffff;
+    opacity: 0.9;
+}
+.navbarsection ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 15px;
+}
+.navbarsection ul li a{
+    text-decoration: none;
+    align-items: center;
+    font-size: 20px;
+    justify-content: center;
+    color: #252525;
+    margin-top: 10px;
+}
+.navbarsection ul li a:hover{
+    color: #F17816;
+}
+.navbarsection h1 a{
+    cursor: pointer;
+    color: black;
+}
+
+/* Navbar Line Bars Section */
+#linebars{
+    padding-right: 15px;
+    display: none;
+}
+#linebars:hover{
+    cursor: pointer;
+}
+
+/* Side Navbar Section */
+.sidenavbarsection{
+    position: fixed;
+    top: 0%;
+    bottom: 0%;
+    background-color: black;
+    color: whitesmoke;
+    padding: 60px;
+    font-size: 30px;
+    opacity: 0.9;
+    font-weight: bolder;
+    animation: sidenavbarsection 2s ease-in-out;
+    display: none;
+}
+@keyframes sidenavbarsection{
+    0%{
+        transform: translateX(-100%);
+    }
+}
+.sidenavbarsection a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.sidenavbarsection ul li{
+    list-style: none;
+    padding-bottom: 10px;
+}
+.sidenavbarsection a:hover{
+    color: #F17816;
+}
+.sidenavbarsection i{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.sidenavbarsection i:hover{
+    cursor: pointer;
+    color: red;
+}
+
+/*Cookbook Thought Section*/
+.cookbook{
+    padding-top: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #F17816;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    box-shadow: 0px 5px 10px #252525;
+}
+#cookbookthought{
+    padding: 35px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 10px;
+    color: #252525;
+}
+.cookbook img{
+    padding: 5px;
+    width: 400px;
+    height: 400px;
+}
+
+/* Explore Recipe Button */
+.explore{
+    padding: 25px;
+    display: flex;
+    justify-content: space-around;
+}
+.explore a button{
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #F17816;
+}
+.explore a button:hover{
+    cursor: pointer;
+    font-size: 25px;
+    box-shadow: 0px 5px 5px #252525;
+}
+
+/* Food Image Section */
+.foodcollections{
+    margin-top: 95px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.foodcollection{
+    flex-basis: 30%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+.foodcollection img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.foodcollection p{
+    font-size: 20px;
+    text-align: center;
+}
+.foodcollection button{
+    font-size: 20px;
+    padding: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 5px;
+    color: #252525;
+    cursor: pointer;
+    border-bottom: 2px solid #252525;
+}
+.foodcollection button:hover{
+    border-top: 2px solid #252525;
+    border-right: 2px solid #252525;
+    border-left: 2px solid #252525;
+    box-shadow: 0px 10px 10px #252525;
+}
+
+/* AboutUs Section */
+.about{
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.about p{
+    width: 60%;
+}
+.about img{
+    width: 300px;
+    height: 300px;
+}
+
+/* Copyright Section */
+.copyright{
+    padding: 10px;
+    text-align: center;
+    background-color: #f18329;
+}
+
+/* Media Query Section */
+
+@media screen and (max-width:1200px){
+    .cookbook{
+        padding-top: 60px;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid #F17816;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+        box-shadow: 0px 5px 10px #252525;
+    }
+    .about{
+        margin: 20px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about p{
+        width: 90%;
+    }
+    .about img{
+        width: 300px;
+        height: 300px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:750px){
+    .navbarsection ul{
+        display: none;
+    }
+    #linebars{
+        display: inline;
+    }
+}
+
+@media screen and (max-width:750px){
+    .explore a button:hover{
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width:640px){
+    .explore{
+        flex-direction: column;
+        align-items: center;
+    }
+    #ex{
+        margin-bottom: 15px;
+    }
+    #gi{
+        margin-bottom: 15px;
+    }
+}
